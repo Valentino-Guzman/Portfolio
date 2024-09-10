@@ -1,0 +1,22 @@
+<section class="w-full lg:w-[900px] mx-auto lg:px-0">
+    <ul class="flex flex-wrap gap-3 justify-center lg:justify-start">
+        <li *ngFor="let link of links">
+            <a [href]="link.url" class="flex items-center">
+                <span class="text-white bg-[#2e2e2e] border border-[#717171] text-sm font-light p-1 px-3 gap-x-1 rounded-full flex items-center hover:bg-black/10"> 
+                    <ng-container *ngIf="link.icon">
+                        <svg [attr.viewBox]="link.icon.viewBox" [attr.width]="link.icon.width" [attr.height]="link.icon.height" xmlns="http://www.w3.org/2000/svg" fill="currentColor" [attr.class]="link.icon.class">
+                            <path [attr.d]="link.icon.path" />
+                        </svg>
+                    </ng-container>
+                    <app-github *ngIf="link.text === 'GitHub'"></app-github>
+                {{link.text}}  
+                </span>      
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+
+
+  
