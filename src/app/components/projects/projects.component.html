@@ -1,22 +1,19 @@
-<section class="w-full xl:w-[900px] mx-auto pb-44">
-    <h1 class="text-3xl font-medium text-white flex items-center"> 
-        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+<section class="w-full xl:w-[900px] mx-auto pb-48">
+    <h1 class="text-3xl font-medium text-white flex items-center justify-center lg:justify-start pb-3 gap-x-1"> 
+        <svg class="size-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14"/>
           </svg>
         Projectos
     </h1>
-    <article class="flex flex-col py-4 space-x-0 md:flex-row md:space-x-8 md:space-y-0">
-        <div class="shadow-2xl shadow-gray-50/10 mx-auto overflow-hidden rounded-lg border border-gray-800/95">
-            <img src="logo.webp" alt="project" class="relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100">
-          </div>
-        <div class="flex flex-col gap-x-2 w-full py-4">
-          <h1 class="text-white font-normal text-2xl p-2 underline flex justify-center lg:justify-start">Proyecto random</h1>
-          <p class="text-gray-300 font-light text-sm p-2 flex justify-center lg:justify-start">
-            Descripcion del proyectodescripcion yecto sad sa dsa dsd sa dsadtodescripcion yecto sad sa dsa dsd sa dsad todescripcion yecto sad sa dsa dsd sa dsad  
-          </p>
-          <div class="flex items-center py-2">
-            <div class="flex flex-row w-full justify-center flex-wrap gap-x-2 gap-y-2">
-              <span class="text-white bg-red-900 text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
+    <article class="flex py-4 flex-col lg:flex-row md:space-x-8 md:space-y-0 p-2">
+      <div class="shadow-2xl shadow-gray-50/10 overflow-hidden rounded-lg border border-gray-800/95">
+        <img src="logo.webp" alt="project" class="rounded-lg scale-110 transition-all duration-300 hover:scale-100">
+      </div>
+        <div class="flex flex-col w-full">
+          <h1 class="text-white font-semibold lg:text-2xl text-xl flex justify-center lg:justify-start py-2">Nombre - Descripción Corta Sobre El Proyecto</h1>
+          <div class="flex items-center">
+            <div class="flex flex-row w-full flex-wrap gap-x-2 py-2">
+              <span class="text-white bg-red-900/75 text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
                 <app-angular></app-angular>
                 Angular
               </span>
@@ -28,47 +25,59 @@
                 <app-tailwind-css></app-tailwind-css>
                 Tailwind CSS
               </span>
-            </div>
-        </div>
-        <div class="flex items-end h-full justify-center">
-          <a href="" class="text-white bg-grayCus border border-grayB text-sm font-light py-1 px-3 gap-x-1 rounded-full flex items-center">
-            GitHub
-            <app-github></app-github>
-            </a>
-        </div>
+              <p class="text-gray-300 font-light text-sm flex justify-center lg:justify-start py-4">
+                Descripcion del proyectodescripcion yecto sad sa dsa dsd sa dsadtodescripcion yecto sad sa dsa dsd sa dsad todescripcion yecto sad sa dsa dsd sa dsad  
+              </p>
+              <div class="p-3 flex justify-center items-end w-full h-full gap-x-2 m-auto">
+                <a href="" class="text-white bg-grayCus border border-grayB text-base font-light py-1 px-3 gap-x-1 rounded-full flex items-center">
+                  GitHub
+                  <app-github></app-github>
+                  </a>
+                <a href="" class="text-white bg-grayCus border border-grayB text-base font-light py-1 px-3 gap-x-1 rounded-full flex items-center">
+                  Preview
+                  <app-preview></app-preview>
+                  </a>
+              </div>
+            </div>  
+          </div>
         </div>
     </article>
-    <article class="flex flex-col py-4 space-x-0 md:flex-row md:space-x-8 md:space-y-0">
-      <div class="shadow-2xl shadow-gray-50/10 mx-auto overflow-hidden rounded-lg border border-gray-800/95">
-          <img src="logo.webp" alt="project" class="relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100">
-        </div>
-      <div class="flex flex-col gap-x-2 w-full py-4">
-        <h1 class="text-white font-normal text-2xl p-2 underline flex justify-center lg:justify-start">Proyecto random</h1>
-        <p class="text-gray-300 font-light text-sm p-2 flex justify-center lg:justify-start">
-          Descripcion del proyectodescripcion yecto sad sa dsa dsd sa dsadtodescripcion yecto sad sa dsa dsd sa dsad todescripcion yecto sad sa dsa dsd sa dsad  
-        </p>
-        <div class="flex items-center py-2">
-          <div class="flex flex-row w-full justify-center flex-wrap gap-x-2 gap-y-2">
-            <span class="text-white bg-red-900 text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
-              <app-angular></app-angular>
-              Angular
-            </span>
-            <span class="text-white bg-green-900 text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
-              <app-node></app-node>
-              Node.js
-            </span>
-            <span class="text-white bg-[#003159] text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
-              <app-tailwind-css></app-tailwind-css>
-              Tailwind CSS
-            </span>
+    <article class="flex py-4 flex-col lg:flex-row md:space-x-8 md:space-y-0 p-2">
+      <div class="shadow-2xl shadow-gray-50/10 overflow-hidden rounded-lg border border-gray-800/95">
+        <img src="logo.webp" alt="project" class="rounded-lg scale-110 transition-all duration-300 hover:scale-100">
+      </div>
+        <div class="flex flex-col w-full">
+          <h1 class="text-white font-semibold lg:text-2xl text-xl flex justify-center lg:justify-start py-2">Nombre - Descripción Corta Sobre El Proyecto</h1>
+          <div class="flex items-center">
+            <div class="flex flex-row w-full flex-wrap gap-x-2 py-2">
+              <span class="text-white bg-red-900/75 text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
+                <app-angular></app-angular>
+                Angular
+              </span>
+              <span class="text-white bg-green-900 text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
+                <app-node></app-node>
+                Node.js
+              </span>
+              <span class="text-white bg-[#003159] text-sm font-light p-1 px-3 gap-x-1 flex items-center rounded-full">
+                <app-tailwind-css></app-tailwind-css>
+                Tailwind CSS
+              </span>
+              <p class="text-gray-300 font-light text-sm flex justify-center lg:justify-start py-4">
+                Descripcion del proyectodescripcion yecto sad sa dsa dsd sa dsadtodescripcion yecto sad sa dsa dsd sa dsad todescripcion yecto sad sa dsa dsd sa dsad  
+              </p>
+              <div class="p-3 flex justify-center items-end w-full h-full gap-x-2 m-auto">
+                <a href="" class="text-white bg-grayCus border border-grayB text-base font-light py-1 px-3 gap-x-1 rounded-full flex items-center">
+                  GitHub
+                  <app-github></app-github>
+                  </a>
+                <a href="" class="text-white bg-grayCus border border-grayB text-base font-light py-1 px-3 gap-x-1 rounded-full flex items-center">
+                  Preview
+                  <app-preview></app-preview>
+                  </a>
+              </div>
+            </div>  
           </div>
-      </div>
-      <div class="flex items-end h-full justify-center">
-        <a href="" class="text-white bg-grayCus border border-grayB text-sm font-light py-1 px-3 gap-x-1 rounded-full flex items-center">
-          GitHub
-          <app-github></app-github>
-          </a>
-      </div>
-      </div>
-  </article>
+        </div>
+    </article>
 </section>
+
