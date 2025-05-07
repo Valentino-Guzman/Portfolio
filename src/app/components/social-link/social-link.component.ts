@@ -22,7 +22,7 @@ export class SocialLinkComponent {
       }
     },
     {
-      url: 'https://github.com/scino11',
+      url: 'https://github.com/Valentino-Guzman',
       text: 'GitHub'
     },
     {
@@ -37,7 +37,7 @@ export class SocialLinkComponent {
       }
     },
     {
-      url: '',
+      url: 'CV.pdf',
       text: 'CV',
       icon: {
         viewBox: '0 0 24 24',
